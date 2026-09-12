@@ -21,7 +21,7 @@ console.log(myNumber);
 
 
 console.log(message + " Today is Saturday");
-let myName = "Dili"
+let myName = "Name"
 console.log(`Hello, my name is ${myName}, I am 29 years old`);
 console.log("Hello, my name is " +  myName + " I am 29 years old");
 
