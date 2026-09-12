@@ -37,18 +37,30 @@ let y = 5 !== "5"
 
 console.log(y)
 
+// DOCUMENT OBJECT MODEL
+
 // document.querySelector("") selects the first element that matches the qeury
 let myHeader = document.querySelector("h1")
 
 console.log(myHeader)
+
 myHeader.innerText = "Hello World"
 myHeader.style = "color: blue;"
-console.log( document.querySelectorAll("p"))
+
+console.log(document.querySelectorAll("p"))
 
 // document.getElementById("") selects the unique element that matches the id input
 console.log(document.getElementById("p2"))
 
+// Events
+
+let buttonHTML = document.getElementById("btn")
 
 
+// The document.getElementById("btn").addEventListener function allws you to use javascript to execute a function when an event occurs
+
+// buttonHTML.addEventListener("click", ()=>{
+//     console.log('hello world')
+// })
 
 

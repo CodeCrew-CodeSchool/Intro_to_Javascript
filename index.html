@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
@@ -11,6 +12,17 @@
     <p>Paragraph 1</p>
     <p id="p2">Paragraph 2</p>
     <p>Paragraph 3</p>
+
+    <img class="hidden" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0C7Xn9L319iylOgZCpnSNLBWHV9GbtWBWwbeB8YpqyA&s=10" alt="">
+
+    <button 
+        onclick="document.querySelector('img').className='' " 
+        id="btn">Show Image</button>
+    
+    <button
+        onclick="document.querySelector('img').className='hidden' " 
+    >Hide Image</button>
+    
 
   <script src="/script.js"></script>
 </body>
