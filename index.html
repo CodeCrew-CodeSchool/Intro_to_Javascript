@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Javascript and DOM Review</h1>
 
@@ -13,22 +15,27 @@
     <p id="p2">Paragraph 2</p>
     <p>Paragraph 3</p>
 
-    <img class="hidden" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0C7Xn9L319iylOgZCpnSNLBWHV9GbtWBWwbeB8YpqyA&s=10" alt="">
+    <img class="hidden"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0C7Xn9L319iylOgZCpnSNLBWHV9GbtWBWwbeB8YpqyA&s=10"
+        alt="">
 
     <!--HTML On Events -->
 
     <!-- Each button will change the 'class' attribute on the html image element.
     the class 'hidden' has a style rule applied to it in the styles.css file -->
 
-    <button 
-        onclick="document.querySelector('img').className='' " 
-        id="btn">Show Image</button>
-    
-    <button
-        onclick="document.querySelector('img').className='hidden' " 
-    >Hide Image</button>
-    
+    <button onclick="
+        // option 1: .className='' sets the class of the elemnt to an empty string
+        document.querySelector('img').className=''
 
-  <script src="/script.js"></script>
+        // option 2: .removeAttribute('class') will remove the class attribute entirely
+        //document.querySelector('img').removeAttribute('class')
+        " id="btn">Show Image</button>
+
+    <button onclick="document.querySelector('img').className='hidden' ">Hide Image</button>
+
+
+    <script src="/script.js"></script>
 </body>
+
 </html>
